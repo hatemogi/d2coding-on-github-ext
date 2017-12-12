@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "D2Coding on GitHub",
+  "version": "0.1.0",
+  "description": "GitHub의 코드를 D2Coding 글꼴로 보여줍니다.",
+  "content_scripts": [{
+    "matches": ["*://*.github.com/*"],
+    "css": ["d2coding-github.css"],
+    "run_at": "document_start"}],
+  "permissions": ["https://*.github.com/"],
+  "web_accessible_resources": ["fonts/*.ttf"]
+}
