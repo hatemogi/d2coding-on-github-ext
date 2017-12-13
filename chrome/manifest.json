@@ -1,12 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "D2Coding on GitHub",
+  "name": "D2Coding for Web",
   "version": "0.1.0",
-  "description": "GitHub의 코드를 D2Coding 글꼴로 보여줍니다.",
+  "description": "GitHub, StackOverflow에서 D2Coding 글꼴로 코드를 보여줍니다.",
+  "author": "https://github.com/hatemogi",
+  "homepage_url": "https://github.com/hatemogi/d2coding-github-extension",
+  "icons": {"128": "icon_128.png"},
   "content_scripts": [{
-    "matches": ["*://*.github.com/*"],
-    "css": ["d2coding-github.css"],
-    "run_at": "document_start"}],
-  "permissions": ["https://*.github.com/"],
+    "matches": ["<all_urls>"],
+    "css": ["d2coding-web.css"]}],
+  "permissions": ["https://*.github.com/", "https://stackoverflow.com/"],
   "web_accessible_resources": ["fonts/*.ttf"]
 }
