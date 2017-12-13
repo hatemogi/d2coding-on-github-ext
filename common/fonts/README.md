@@ -1,2 +1,2 @@
-THIS FONTS ARE FROM
+THESE FONTS ARE FROM
 https://github.com/naver/d2codingfont
